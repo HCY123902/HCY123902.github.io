@@ -933,7 +933,7 @@ main {
 .select-item button:hover { --eerie-black-2: hsl(240, 2%, 20%); }
 
 .project-list {
-  display: grid;
+  display: list-item;
   grid-template-columns: 1fr;
   gap: 30px;
   margin-bottom: 10px;
@@ -943,7 +943,21 @@ main {
 
 .project-item.active {
   display: block;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 16px;
+  padding: 10px;
+  box-shadow: var(--shadow-4);
+  background: var(--eerie-black-1);
   animation: scaleUp 0.25s ease forwards;
+}
+
+.project-item-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 18px;
+  padding: 10px;
 }
 
 @keyframes scaleUp {
@@ -955,11 +969,11 @@ main {
 
 .project-img {
   position: relative;
-  width: 100%;
+  width: 50%;
   height: 200px;
   border-radius: 16px;
   overflow: hidden;
-  margin-bottom: 15px;
+  /* margin-bottom: 15px; */
 }
 
 .project-img::before {
@@ -1037,7 +1051,7 @@ main {
 .blog-posts { margin-bottom: 10px; }
 
 .blog-posts-list {
-  display: grid;
+  display: list-item;
   grid-template-columns: 1fr;
   gap: 20px;
 }
@@ -1048,6 +1062,8 @@ main {
   height: 100%;
   box-shadow: var(--shadow-4);
   border-radius: 16px;
+  margin-top: 20px;
+  margin-bottom: 20px;
   z-index: 1;
 }
 
