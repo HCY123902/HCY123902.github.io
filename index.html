@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>vCard - Personal Portfolio</title>
+  <title>Personal Portfolio</title>
 
   <!--
     - favicon
@@ -698,7 +698,7 @@
               <div class="blog-content">
 
                 <div class="blog-meta">
-                  <p class="blog-category">Chengyu Huang, Zheng Zhang, Hao Fei, Lizi Liao</p>
+                  <p class="blog-category">Chengyu Huang, Zheng Zhang, Hao Fei, and Lizi Liao</p>
 
                   <span class="dot"></span>
 
@@ -712,15 +712,18 @@
                 <h3 class="h3 blog-item-title">Conversation Disentanglement with Bi-Level Contrastive Learning</h3>
 
                 <p class="blog-text">
-                  In this paper, we propose to formulate Conversation Disentanglement as a clustering task, in contrast to how it is traditionally solved as a pointing task. 
+                  We observed that many existing disentanglement models do not pay sufficient attention to the dialogue context, while context is crucial in cases where
+                  the query utterance is ambiguous but the surrounding utterances indicates its belonging.<br><br>
+
+                  We propose to formulate Conversation Disentanglement as a global clustering task, in contrast to how it is traditionally solved as a pointing task. 
                   We use contrastive learning to pull embeddings of utterances from the same session closer and pull away those from different sessions. K means is then used to cluster the utterances<br><br>
                 
                   &#x2022; We design a bi-level contrastive learning scheme to learn better utterance level and session level representations for disentanglement.<br>
                   &#x2022; We delve into the conversation nature to harvest evidence which supports our model to disentangle dialogues without any supervision.<br>
                   &#x2022; Experiments show that the proposed Bi-CL model significantly outperforms several state of-the-art models both on the supervised and unsupervised settings across datasets.<br><br>
                 
-                  <a href="https://aclanthology.org/2022.findings-emnlp.217/" class="blog-link">[EMNLP]</a>
-                  <a href="https://docs.google.com/presentation/d/1LWMngbOR53N4Arl0Xwuwv5T1EOTn3CIQ/edit?usp=share_link&ouid=101260184283002475742&rtpof=true&sd=true" class="blog-link">[Slides at EMNLP]</a>
+                  <a href="https://aclanthology.org/2022.findings-emnlp.217/" class="inline-link">[EMNLP]</a>
+                  <a href="https://docs.google.com/presentation/d/1LWMngbOR53N4Arl0Xwuwv5T1EOTn3CIQ/edit?usp=share_link&ouid=101260184283002475742&rtpof=true&sd=true" class="inline-link">[Slides at EMNLP]</a>
                 </p>
               </div>
               
@@ -739,28 +742,31 @@
                 <div class="blog-content">
 
                   <div class="blog-meta">
-                    <p class="blog-category">Suyu Liu, Chengyu Huang, Libo Qin, Hao Fei, Tat-Seng Chua and Lizi Liao</p>
+                    <p class="blog-category">Suyu Liu, Chengyu Huang, Libo Qin, Hao Fei, Tat-Seng Chua, and Lizi Liao</p>
 
                     <span class="dot"></span>
 
-                    <p class="blog-category">To be submitted</p>
+                    <p class="blog-category">To submit</p>
 
                     <span class="dot"></span>
 
-                    <time datetime="2023-12-06">Dec 06, 2023</time>
+                    <time datetime="2023-12-06">To confirm</time>
                   </div>
 
                   <h3 class="h3 blog-item-title">Disentangle Multi-party Conversations as Reordering with Curriculum</h3>
 
                   <p class="blog-text">
-                    In this paper, we propose to use reordering as a generalizable strategy to make conversation disentanglement more effective. Reordering has 2 roles.
-                    In training, it is used to generate new dialogues and augment the dataset. In inference, it is used recursively to correct the model's prediction.<br><br>
+                    We observed existing models' heavy reliance on handcrafted features and their dependence on Ubuntu IRC. This necessaites the
+                    development of a more generalizable techniques that can make the model disentangle as effectively in other settings.<br><br>
+
+                    We propose to use reordering as a generalizable strategy to make conversation disentanglement more effective. Reordering has 2 roles.
+                    In training, it is used to generate new dialogues and augment the dataset. In inference, it is used recursively to correct the model's prediction. <br><br>
 
                     &#x2022; We propose to use reordering for data augmentation and leverage curriculum learning to guide the training process.<br>
                     &#x2022; We design a recursive reordering process during inference to enhance the model prediction accuracy.<br>
-                    &#x2022; Experiments show that our proposed techniques can boost the disentanglement effectiveness across different models and datasets, demonstrating their generalizability.<br><br>
+                    &#x2022; Experiments show that our proposed techniques can boost the disentanglement effectiveness across different models and datasets, demonstrating their generalizability.
                   
-                    <a href="https://drive.google.com/file/d/1Ag3woY2vxadLEpkRNWwbfSyAZNyvGRq0/view?usp=share_link" class="blog-link">[Draft version]</a>
+                    <!-- <a href="https://drive.google.com/file/d/1Ag3woY2vxadLEpkRNWwbfSyAZNyvGRq0/view?usp=share_link" class="inline-link">[Draft version]</a> -->
                   </p>
 
                 </div> 
@@ -793,11 +799,11 @@
             </li>
 
             <li class="filter-item">
-              <button data-filter-btn>Software Engineering</button>
+              <button data-filter-btn>Research</button>
             </li>
 
             <li class="filter-item">
-              <button data-filter-btn>Research</button>
+              <button data-filter-btn>Software Engineering</button>
             </li>
 
           </ul>
@@ -821,11 +827,11 @@
               </li>
 
               <li class="select-item">
-                <button data-select-item>Software Engineering</button>
+                <button data-select-item>Research</button>
               </li>
 
               <li class="select-item">
-                <button data-select-item>Research</button>
+                <button data-select-item>Software Engineering</button>
               </li>
 
             </ul>
@@ -834,76 +840,214 @@
 
           <ul class="project-list">
 
-            <li class="project-item  active" data-filter-item data-category="software engineering">
-              <a href="#">
-                <div class="project-item-container">
-                  <figure class="project-img">
-                    <img src="./assets/images/project-2.png" alt="finance" loading="lazy">
-                  </figure>
-                  <div>
-                    <h3 class="project-title">Orizon</h3>
-
-                    <p class="project-category">
-                      Web development with description text ttttt tttttt ttttttttttt tttttttt ttttt tttt tttt tttttt
-                    ttt tttttt tttttttttt ttttttttttt tttttttt ttttt tttttt ttttt tt ttt ttttt  tttttt ttttttt ttttt ttt
-                    </p>
-                  </div>
+            <li class="project-item  active" data-filter-item data-category="research">
+              <div class="project-item-container">
+                <div class="project-img">
+                  <img src="./assets/images/research.jpg" alt="orizon" loading="lazy">
                 </div>
-              </a>
-            </li>
+                <div class="project-content-box">
+                  <h3 class="project-title">Multi-party Response Generation with Conversation Disentanglement, Honour Year Project</h3>
 
-            <li class="project-item  active" data-filter-item data-category="software engineering">
-              <a href="#">
-                <div class="project-item-container">
-                  <figure class="project-img">
-                    <img src="./assets/images/project-2.png" alt="orizon" loading="lazy">
-                  </figure>
-                  <div>
-                    <h3 class="project-title">Orizon</h3>
+                  <p class="project-description">
+                    Supervisor: Professor Tat Seng Chua, Professor Lizi Liao<br><br>
 
-                    <p class="project-category">
-                      Web development with description text ttttt tttttt ttttttttttt tttttttt ttttt tttt tttt tttttt
-                    ttt tttttt tttttttttt ttttttttttt tttttttt ttttt tttttt ttttt tt ttt ttttt  tttttt ttttttt ttttt ttt
-                    </p>
-                  </div>
+                    This work aims at providing a standard solution for multiparty response generation. There has been initial exploration on this task. 
+                    However, the reliance of existing models on dialogue structure labels restricts their usefulness.<br><br>
+                    
+                    A natural and more robust solution is to first disentangle the conversation, so that the context can be filtered and reorganized for response generation. 
+                    While there has been substantial work that focuses on conversation disentanglement and response generation as standalone tasks, very few has explored the 
+                    option of combining them together.<br><br>
+
+                    To achieve the goal, we consider 2 integration options.<br><br>
+                    &#x2022; Integration with hard disentanglement: Directly filter the dialogue context with a disentanglement model and then input the resulting dialogue into a response generation system<br>
+                    &#x2022; Integration with soft disentanglement: Use a soft Relational Disentanglement to infer a relation graph and get the distilled context embedding, and then input the embedding into a decoder for response generation<br><br>
+
+                    We evaluate both types of pipelines against the existing methods, and demonstrate their effectivness.<br><br>
+
+                    Toolstack: Python, PyTorch
+
+                    <!-- <a href="https://aclanthology.org/2022.findings-emnlp.217/" class="inline-link">[Draft version]</a> -->
+                  </p>
                 </div>
-              </a>
+              </div>
             </li>
 
             <li class="project-item  active" data-filter-item data-category="research">
-              <a href="#">
-                <div class="project-item-container">
-                  <figure class="project-img">
-                    <img src="./assets/images/project-2.png" alt="fundo" loading="lazy">
-                  </figure>
-                  <div>
-                    <h3 class="project-title">Orizon</h3>
-
-                    <p class="project-category">
-                      Web development with description text ttttt tttttt ttttttttttt tttttttt ttttt tttt tttt tttttt
-                    ttt tttttt tttttttttt ttttttttttt tttttttt ttttt tttttt ttttt tt ttt ttttt  tttttt ttttttt ttttt ttt
-                    </p>
-                  </div>
+              <div class="project-item-container">
+                <div class="project-img">
+                  <img src="./assets/images/research.jpg" alt="orizon" loading="lazy">
                 </div>
-              </a>
+                <div class="project-content-box">
+                  <h3 class="project-title">Disentangle Multi-party Conversations as Reordering with Curriculum</h3>
+
+                  <p class="project-description">
+                    Supervisor: Professor Tat Seng Chua, Professor Lizi Liao<br><br>
+
+                    We observed existing models' heavy reliance on handcrafted features and their dependence on Ubuntu IRC. This necessaites the
+                    development of a more generalizable techniques that can make the model disentangle as effectively in other settings.<br><br>
+
+                    We propose to use reordering as a generalizable strategy to make conversation disentanglement more effective. Reordering has 2 roles.
+                    In training, it is used to generate new dialogues and augment the dataset. In inference, it is used recursively to correct the model's prediction.<br><br>
+
+                    Toolstack: Python, PyTorch
+
+                    <!-- <a href="https://aclanthology.org/2022.findings-emnlp.217/" class="inline-link">[Draft version]</a> -->
+                  </p>
+                </div>
+              </div>
+            </li>
+            
+            <li class="project-item  active" data-filter-item data-category="research">
+              <div class="project-item-container">
+                <div class="project-img">
+                  <img src="./assets/images/research.jpg" alt="orizon" loading="lazy">
+                </div>
+                <div class="project-content-box">
+                  <h3 class="project-title">Conversation Disentanglement with Bi-Level Contrastive Learning</h3>
+
+                  <p class="project-description">
+                    Supervisor: Professor Tat Seng Chua, Professor Lizi Liao<br><br>
+
+                    We observed that many existing disentanglement models do not pay sufficient attention to the dialogue context, while context is crucial in cases where
+                    the query utterance is ambiguous but the surrounding utterances indicates its belonging.<br><br>
+  
+                    We propose to formulate Conversation Disentanglement as a global clustering task, in contrast to how it is traditionally solved as a pointing task. 
+                    We use contrastive learning to pull embeddings of utterances from the same session closer and pull away those from different sessions. K means is then used to cluster the utterances<br><br>
+
+                    Toolstack: Python, PyTorch<br><br>
+
+                    <a href="https://aclanthology.org/2022.findings-emnlp.217/" class="inline-link">[EMNLP]</a>
+                    <a href="https://docs.google.com/presentation/d/1LWMngbOR53N4Arl0Xwuwv5T1EOTn3CIQ/edit?usp=share_link&ouid=101260184283002475742&rtpof=true&sd=true" class="inline-link">[Slides at EMNLP]</a>
+                  </p>
+                </div>
+              </div>
             </li>
 
             <li class="project-item  active" data-filter-item data-category="research">
-              <a href="#">
-                <div class="project-item-container">
-                  <figure class="project-img">
-                    <img src="./assets/images/project-4.png" alt="brawlhalla" loading="lazy">
-                  </figure>
-                  <div>
-                    <h3 class="project-title">Orizon</h3>
-
-                    <p class="project-category">
-                      Web development with description text ttttt tttttt ttttttttttt tttttttt ttttt tttt tttt tttttt
-                    ttt tttttt tttttttttt ttttttttttt tttttttt ttttt tttttt ttttt tt ttt ttttt  tttttt ttttttt ttttt ttt
-                    </p>
-                  </div>
+              <div class="project-item-container">
+                <div class="project-img">
+                  <img src="./assets/images/research.jpg" alt="orizon" loading="lazy">
                 </div>
-              </a>
+                <div class="project-content-box">
+                  <h3 class="project-title">Multi-party Response Generation with Relation Disentanglement</h3>
+
+                  <p class="project-description">
+                    Supervisor: Professor Tat Seng Chua, Professor Lizi Liao<br><br>
+
+                    While there have been works on multi-party response generation, they mostly require the dialogue structure ground truth to be given in advance, which undermines
+                    their usefulness when such ground truth is not present.<br><br>
+                    
+                    Relational Thinking is a fundamental learning process where people spontaneously perceive complex relationships among objects 
+                    or concepts. It was originated and developed in cognitive neuroscience and has remained under-explored in the NLP community.<br><br>
+                    
+                    In this project, we investigate how to make use of Relational Thinking to disentangle the conversation through inferring a reply-to relation
+                    graph. Message passing will then be used to update the hidden states of the utterances, from which the context embedding can be computed. The
+                    decoder can then use this context for response generation.<br><br>
+
+                    Toolstack: Python, PyTorch<br><br>
+
+                    <a href="https://drive.google.com/file/d/1ydefrr2QYO_DJK4z4IN5DKOcumuec2eR/view?usp=share_link" class="inline-link">[Writing sample]</a>
+                  </p>
+                </div>
+              </div>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="software engineering">
+              <div class="project-item-container">
+                <figure class="project-img">
+                  <img src="./assets/images/internship-3.jpg" alt="finance" loading="lazy">
+                </figure>
+                <div class="project-content-box">
+                  <h3 class="project-title">Bank Code Center</h3>
+
+                  <p class="project-description">
+                    I developed a service to store bank records for the Global Payment team in ByteDance. Its functionalities include <br><br>
+
+                    &#x2022; Submission of bank record CRUD requests through the user interface for internal enginners, capable of batch submission <br>
+                    &#x2022; Audition and execution of the CRUD requests <br>
+                    &#x2022; Cached reading of bank records from real time transcations <br><br>
+                    
+                    Toolstack: Go, Kite, MongoDB
+                  </p>
+                </div>
+              </div>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="software engineering">
+              <div class="project-item-container">
+                <div class="project-img">
+                  <img src="./assets/images/RepoSense.png" alt="orizon" loading="lazy">
+                </div>
+                <div class="project-content-box">
+                  <h3 class="project-title">RepoSense</h3>
+
+                  <p class="project-description">
+                    RepoSense is an open source contribution analysis tool for Git repositories. It is particularly useful for those who want a chronological visualisation of the code contributions and commits made to a group of repositories.<br><br>
+
+                    As a project developer and mentor, I personally<br><br>
+
+                    &#x2022; Implemented highlighting of selected single entry or merged group on the summary panel<br>
+                    &#x2022; Implemented binary file support in authorship contribution panel<br>
+                    &#x2022; Wrote developer tutorial and release guide for RepoSense<br>
+                    &#x2022; Reviewed close to 100 pull requests and making 5 product releases<br><br>
+
+                    Toolstack: JavaScript, Vue, Java<br><br>
+
+                    <a href="https://reposense.org/" class="inline-link">[Product Site]</a>
+                    <a href="https://github.com/reposense/RepoSense" class="inline-link">[Repository]</a>
+                  </p>
+                </div>
+              </div>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="software engineering">
+              
+              <div class="project-item-container">
+                <div class="project-img">
+                  <img src="./assets/images/internship-2.png" alt="orizon" loading="lazy">
+                </div>
+                <div class="project-content-box">
+                  <h3 class="project-title">Transcation monitoring bot</h3>
+
+                  <p class="project-description">
+                    I developed a monitoring bot to monitor the customer transcations for the Global Payment team in ByteDance. It is capable of<br><br>
+
+                    &#x2022; Receiving alerts from an internal platform that monitors a Time Series Database (TSDB) storeing metrics emitted by the payment system<br>
+                    &#x2022; Sending messages to engineers in charge and help them handle the alerts<br>
+                    &#x2022; CRUD of alert trigger rules that are used by the internal monitoring platform<br><br>
+
+                    Toolstack: Go, Ginex, Kite, MongoDB, Lark Open Platform
+                  </p>
+                </div>
+              </div> 
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="software engineering">
+              
+              <div class="project-item-container">
+                <div class="project-img">
+                  <img src="./assets/images/internship-1.png" alt="orizon" loading="lazy">
+                </div>
+                <div class="project-content-box">
+                  <h3 class="project-title">UWave Mobile Application</h3>
+
+                  <p class="project-description">
+                    UWave is a mobile application having more than 10000 users on campus. It provides various utilities to help people on campus connect
+                    with each other, learn about campus life, and manage their studies.<br><br>
+
+                    I collaborated with other members in the development team of UWave and<br><br>
+
+                    &#x2022; Implemented part of the module calendar page<br>
+                    &#x2022; Implemented features on several other pages such as the but timing page, library access page, community page, and settings page<br><br>
+                    &#x2022; Helped with its user growth especially in the NUS community<br><br>
+
+                    Toolstack: Dart, Flutter<br><br>
+
+                    <a href="https://play.google.com/store/apps/details?id=com.wave.identity&hl=en_US" class="inline-link">[Android]</a>
+                    <a href="https://uwave.sg/" class="inline-link">[IOS]</a>
+                  </p>
+                </div>
+              </div>
             </li>
 
           </ul>
@@ -937,41 +1081,48 @@
 
             <li class="timeline-item">
 
-              <h4 class="h4 timeline-item-title">University school of the arts</h4>
+              <h4 class="h4 timeline-item-title">CS3230, Design and Analysis of Algorithms, NUS</h4>
 
-              <span>2007 — 2008</span>
+              <span>Aug 2021 — Nov 2021</span>
 
               <p class="timeline-text">
-                Nemo enims ipsam voluptatem, blanditiis praesentium voluptum delenit atque corrupti, quos dolores et
-                quas molestias
-                exceptur.
+                Conduct weekly tutorials and consultation sessions; Serve as proctor; Mark the submissions
               </p>
 
             </li>
 
             <li class="timeline-item">
 
-              <h4 class="h4 timeline-item-title">New york academy of art</h4>
+              <h4 class="h4 timeline-item-title">CS2100, Computer Organization, NUS</h4>
 
-              <span>2006 — 2007</span>
+              <span>Jan 2021 — April 2021</span>
 
               <p class="timeline-text">
-                Ratione voluptatem sequi nesciunt, facere quisquams facere menda ossimus, omnis voluptas assumenda est
-                omnis..
+                Conduct weekly lab sessions; Mark the lab reports
               </p>
 
             </li>
 
             <li class="timeline-item">
 
-              <h4 class="h4 timeline-item-title">High school of art and design</h4>
+              <h4 class="h4 timeline-item-title">CS1231S, Discrete Structures, NUS</h4>
 
-              <span>2002 — 2004</span>
+              <span>Aug 2020 - Nov 2020</span>
 
               <p class="timeline-text">
-                Duis aute irure dolor in reprehenderit in voluptate, quila voluptas mag odit aut fugit, sed consequuntur
-                magni dolores
-                eos.
+                Conduct weekly tutorials and consultation sessions; Serve as proctor; Mark the submissions
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">CS1101S, Programming Methodology, NUS</h4>
+
+              <span>Aug 2020 - Nov 2020</span>
+
+              <p class="timeline-text">
+                Conduct weekly tutorials and consultation sessions; Mark the submissions
               </p>
 
             </li>
