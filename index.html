@@ -236,7 +236,7 @@
 
           <ul class="service-list">
 
-            <li>
+            <li class="service-entry">
               <a href="https://paperswithcode.com/task/conversation-disentanglement">
                 <div class="service-item">
                   <div class="service-icon-box">
@@ -255,11 +255,11 @@
               </a>
             </li>
 
-            <li>
+            <li class="service-entry">
               <a href="https://paperswithcode.com/task/response-generation">
                 <div class="service-item">
                   <div class="service-icon-box">
-                    <img src="./assets/images/disentanglement.jpg" alt="design icon" width="40">
+                    <img src="./assets/images/response-generation.jpg" alt="design icon" width="40">
                   </div>
     
                   <div class="service-content-box">
@@ -695,39 +695,43 @@
           <ul class="blog-posts-list">
 
             <li class="blog-post-item">
-              <a href="#">
+              <div class="blog-content">
 
-                <!-- <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-1.jpg" alt="Design conferences in 2022" loading="lazy">
-                </figure> -->
+                <div class="blog-meta">
+                  <p class="blog-category">Chengyu Huang, Zheng Zhang, Hao Fei, Lizi Liao</p>
 
-                <div class="blog-content">
+                  <span class="dot"></span>
 
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
+                  <p class="blog-category">EMNLP</p>
 
-                    <span class="dot"></span>
+                  <span class="dot"></span>
 
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">Design conferences in 2022</h3>
-
-                  <p class="blog-text">
-                    Veritatis et quasi architecto beatae vitae dicta sunt, explicabo.
-                    Excepteur sint occaecat cupidatat no proident, quis nostrum exercitationem ullam corporis suscipit.
-                    Web development with description text ttttt tttttt ttttttttttt tttttttt ttttt tttt tttt tttttt
-                  ttt tttttt tttttttttt ttttttttttt tttttttt ttttt tttttt ttttt tt ttt ttttt  tttttt ttttttt ttttt ttt
-                  </p>
-
+                  <time datetime="2022-12-07">Dec 07, 2022</time>
                 </div>
 
-              </a>
+                <h3 class="h3 blog-item-title">Conversation Disentanglement with Bi-Level Contrastive Learning</h3>
+
+                <p class="blog-text">
+                  In this paper, we propose to formulate Conversation Disentanglement as a clustering task, in contrast to how it is traditionally solved as a pointing task. 
+                  We use contrastive learning to pull embeddings of utterances from the same session closer and pull away those from different sessions. K means is then used to cluster the utterances<br><br>
+                
+                  &#x2022; We design a bi-level contrastive learning scheme to learn better utterance level and session level representations for disentanglement.<br>
+                  &#x2022; We delve into the conversation nature to harvest evidence which supports our model to disentangle dialogues without any supervision.<br>
+                  &#x2022; Experiments show that the proposed Bi-CL model significantly outperforms several state of-the-art models both on the supervised and unsupervised settings across datasets.<br><br>
+                
+                  <a href="https://aclanthology.org/2022.findings-emnlp.217/" class="blog-link">[EMNLP]</a>
+                  <a href="https://docs.google.com/presentation/d/1LWMngbOR53N4Arl0Xwuwv5T1EOTn3CIQ/edit?usp=share_link&ouid=101260184283002475742&rtpof=true&sd=true" class="blog-link">[Slides at EMNLP]</a>
+                </p>
+              </div>
+              
+              <!-- <figure class="blog-banner-box">
+                <img src="./assets/images/blog-1.jpg" alt="Design conferences in 2022" loading="lazy">
+              </figure> -->
+
+
             </li>
 
             <li class="blog-post-item">
-              <a href="#">
-
                 <!-- <figure class="blog-banner-box">
                   <img src="./assets/images/blog-2.jpg" alt="Best fonts every designer" loading="lazy">
                 </figure> -->
@@ -735,55 +739,31 @@
                 <div class="blog-content">
 
                   <div class="blog-meta">
-                    <p class="blog-category">Design</p>
+                    <p class="blog-category">Suyu Liu, Chengyu Huang, Libo Qin, Hao Fei, Tat-Seng Chua and Lizi Liao</p>
 
                     <span class="dot"></span>
 
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">Best fonts every designer</h3>
-
-                  <p class="blog-text">
-                    Sed ut perspiciatis, nam libero tempore, cum soluta nobis est eligendi.
-                    Excepteur sint occaecat cupidatat no proident, quis nostrum exercitationem ullam corporis suscipit.
-                    Web development with description text ttttt tttttt ttttttttttt tttttttt ttttt tttt tttt tttttt
-                  ttt tttttt tttttttttt ttttttttttt tttttttt ttttt tttttt ttttt tt ttt ttttt  tttttt ttttttt ttttt ttt
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="#">
-
-                <!-- <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-3.jpg" alt="Design digest #80" loading="lazy">
-                </figure> -->
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
+                    <p class="blog-category">To be submitted</p>
 
                     <span class="dot"></span>
 
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                    <time datetime="2023-12-06">Dec 06, 2023</time>
                   </div>
 
-                  <h3 class="h3 blog-item-title">Design digest #80</h3>
+                  <h3 class="h3 blog-item-title">Disentangle Multi-party Conversations as Reordering with Curriculum</h3>
 
                   <p class="blog-text">
-                    Excepteur sint occaecat cupidatat no proident, quis nostrum exercitationem ullam corporis suscipit.
-                    Web development with description text ttttt tttttt ttttttttttt tttttttt ttttt tttt tttt tttttt
-                  ttt tttttt tttttttttt ttttttttttt tttttttt ttttt tttttt ttttt tt ttt ttttt  tttttt ttttttt ttttt ttt
+                    In this paper, we propose to use reordering as a generalizable strategy to make conversation disentanglement more effective. Reordering has 2 roles.
+                    In training, it is used to generate new dialogues and augment the dataset. In inference, it is used recursively to correct the model's prediction.<br><br>
+
+                    &#x2022; We propose to use reordering for data augmentation and leverage curriculum learning to guide the training process.<br>
+                    &#x2022; We design a recursive reordering process during inference to enhance the model prediction accuracy.<br>
+                    &#x2022; Experiments show that our proposed techniques can boost the disentanglement effectiveness across different models and datasets, demonstrating their generalizability.<br><br>
+                  
+                    <a href="https://drive.google.com/file/d/1Ag3woY2vxadLEpkRNWwbfSyAZNyvGRq0/view?usp=share_link" class="blog-link">[Draft version]</a>
                   </p>
 
-                </div>
-
-              </a>
+                </div> 
             </li>
 
           </ul>
