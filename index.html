@@ -1,1 +1,1208 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal Portfolio</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="./assets/images/my-avatar.jpg" alt="Richard hanrick" width="80">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Richard hanrick">Huang Chengyu</h1>
+
+          <p class="title">Undergraduate</p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto:chengyu@comp.nus.edu.sg" class="contact-link">chengyu@comp.nus.edu.sg</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Phone</p>
+
+              <a href="tel:+12133522795" class="contact-link">+65 86943640</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <img src="assets/images/icon-github.svg"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">GitHub</p>
+
+              <a href="https://github.com/HCY123902" class="contact-link">My profile</a>
+            </div>
+
+          </li>
+
+          <!-- <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+
+              <address>Sacramento, California, USA</address>
+            </div>
+
+          </li> -->
+
+        </ul>
+
+        <!-- <div class="separator"></div>
+
+        <ul class="social-list">
+
+          <li class="social-item">
+            <a href="#" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="#" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="#" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+        </ul> -->
+
+      </div>
+
+    </aside>
+
+
+
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>About</button>
+          </li>
+
+          <li class="navbar-item">
+            <a href="./assets/documents/resume.pdf">
+              <button class="navbar-link" data-nav-link>Resume</button>
+            </a>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Publications</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Projects</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Teaching</button>
+          </li>
+
+        </ul>
+
+      </nav>
+
+
+
+
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about  active" data-page="about">
+
+        <header>
+          <h2 class="h2 article-title">About me</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+            I am currently a year 4 undergraduate [at] National University of Singapore, majoring in Computer Science.
+          </p>
+
+          <p>
+            My research focus is on Natural Language Processing (NLP). A more specific track that I am keen on is 
+            dialogue agents. I enjoy building conversational agents that can benefit the public in various scenarios. My goal
+            is to extend the usage of open domain chatbots to more general settings.
+
+            Currently, I am working on Converstation Disentanglement and multi-party Response Generation to enable chit-chat agents
+            to work in multi-party dialogues that involve more than 2 speakers. Solving these tasks is crucial for the eventual application of 
+            chatbots in group chat and forums, where different topics may be discussed in a simultaneous and interleaved manner.
+          </p>
+        </section>
+
+
+        <!--
+          - service
+        -->
+
+        <section class="service">
+
+          <h3 class="h3 service-title">What I am doing</h3>
+
+          <ul class="service-list">
+
+            <li class="service-entry">
+              <a href="https://paperswithcode.com/task/conversation-disentanglement">
+                <div class="service-item">
+                  <div class="service-icon-box">
+                    <img src="./assets/images/disentanglement.jpg" alt="design icon" width="40">
+                  </div>
+    
+                  <div class="service-content-box">
+                    <h4 class="h4 service-item-title">Conversation Disentanglement</h4>
+    
+                    <p class="service-item-text">
+                      Conversation Disentanglement is the task of separating the utterances in a multi-party dialogue into detached threads, where each thread corresponds
+                      to a single topic being discussed.
+                    </p>
+                  </div>
+                </div>
+              </a>
+            </li>
+
+            <li class="service-entry">
+              <a href="https://paperswithcode.com/task/response-generation">
+                <div class="service-item">
+                  <div class="service-icon-box">
+                    <img src="./assets/images/response-generation.jpg" alt="design icon" width="40">
+                  </div>
+    
+                  <div class="service-content-box">
+                    <h4 class="h4 service-item-title">Response Generation</h4>
+    
+                    <p class="service-item-text">
+                      Response Generation is the task of generating a text to reply to a given message. While there are many works that explore the diversity and smoothness of 
+                      generation in a 1-1 setting, research multi-party response generation is still at the starting stage.
+                    </p>
+                  </div>
+                </div>
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+
+        <!--
+          - testimonials
+        -->
+
+        <!-- <section class="testimonials">
+
+          <h3 class="h3 testimonials-title">Testimonials</h3>
+
+          <ul class="testimonials-list has-scrollbar">
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Daniel lewis</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                    lot of experience
+                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                    consectetur adipiscing
+                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-2.png" alt="Jessica miller" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Jessica miller</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                    lot of experience
+                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                    consectetur adipiscing
+                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-3.png" alt="Emily evans" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Emily evans</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                    lot of experience
+                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                    consectetur adipiscing
+                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-4.png" alt="Henry william" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Henry william</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                    lot of experience
+                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                    consectetur adipiscing
+                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </section> -->
+
+
+        <!--
+          - testimonials modal
+        -->
+
+        <!-- <div class="modal-container" data-modal-container>
+
+          <div class="overlay" data-overlay></div>
+
+          <section class="testimonials-modal">
+
+            <button class="modal-close-btn" data-modal-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+            <div class="modal-img-wrapper">
+              <figure class="modal-avatar-box">
+                <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img>
+              </figure>
+
+              <img src="./assets/images/icon-quote.svg" alt="quote icon">
+            </div>
+
+            <div class="modal-content">
+
+              <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
+
+              <time datetime="2021-06-14">14 June, 2021</time>
+
+              <div data-modal-text>
+                <p>
+                  Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                  lot of experience
+                  and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                  consectetur adipiscing
+                  elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                </p>
+              </div>
+
+            </div>
+
+          </section>
+
+        </div> -->
+
+
+        <!--
+          - clients
+        -->
+
+        <!-- <section class="clients">
+
+          <h3 class="h3 clients-title">Clients</h3>
+
+          <ul class="clients-list has-scrollbar">
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-1-color.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-2-color.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-3-color.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-4-color.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-5-color.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-6-color.png" alt="client logo">
+              </a>
+            </li>
+
+          </ul>
+
+        </section> -->
+
+      </article>
+
+
+
+
+
+      <!--
+        - #RESUME
+      -->
+
+      <article class="resume" data-page="resume">
+
+        <header>
+          <h2 class="h2 article-title">Resume</h2>
+        </header>
+
+        <section>
+          <p class="timeline-text">
+            Please see attached resume for more details.
+          </p>
+        </section>
+
+        <!-- <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Education</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">University school of the arts</h4>
+
+              <span>2007 — 2008</span>
+
+              <p class="timeline-text">
+                Nemo enims ipsam voluptatem, blanditiis praesentium voluptum delenit atque corrupti, quos dolores et
+                quas molestias
+                exceptur.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">New york academy of art</h4>
+
+              <span>2006 — 2007</span>
+
+              <p class="timeline-text">
+                Ratione voluptatem sequi nesciunt, facere quisquams facere menda ossimus, omnis voluptas assumenda est
+                omnis..
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">High school of art and design</h4>
+
+              <span>2002 — 2004</span>
+
+              <p class="timeline-text">
+                Duis aute irure dolor in reprehenderit in voluptate, quila voluptas mag odit aut fugit, sed consequuntur
+                magni dolores
+                eos.
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Experience</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Creative director</h4>
+
+              <span>2015 — Present</span>
+
+              <p class="timeline-text">
+                Nemo enim ipsam voluptatem blanditiis praesentium voluptum delenit atque corrupti, quos dolores et qvuas
+                molestias
+                exceptur.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Art director</h4>
+
+              <span>2013 — 2015</span>
+
+              <p class="timeline-text">
+                Nemo enims ipsam voluptatem, blanditiis praesentium voluptum delenit atque corrupti, quos dolores et
+                quas molestias
+                exceptur.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Web designer</h4>
+
+              <span>2010 — 2013</span>
+
+              <p class="timeline-text">
+                Nemo enims ipsam voluptatem, blanditiis praesentium voluptum delenit atque corrupti, quos dolores et
+                quas molestias
+                exceptur.
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="skill">
+
+          <h3 class="h3 skills-title">My skills</h3>
+
+          <ul class="skills-list content-card">
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Web design</h5>
+                <data value="80">80%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 80%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Graphic design</h5>
+                <data value="70">70%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 70%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Branding</h5>
+                <data value="90">90%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 90%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">WordPress</h5>
+                <data value="50">50%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 50%;"></div>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section> -->
+
+      </article>
+
+
+
+      <!--
+        - #PUBLICATIONS
+      -->
+
+      <article class="publications" data-page="publications">
+
+        <header>
+          <h2 class="h2 article-title">Publications</h2>
+        </header>
+
+        <section class="blog-posts">
+
+          <ul class="blog-posts-list">
+
+            <li class="blog-post-item">
+              <div class="blog-content">
+
+                <div class="blog-meta">
+                  <p class="blog-category">Chengyu Huang, Zheng Zhang, Hao Fei, and Lizi Liao</p>
+
+                  <span class="dot"></span>
+
+                  <p class="blog-category">EMNLP</p>
+
+                  <span class="dot"></span>
+
+                  <time datetime="2022-12-07">Dec 07, 2022</time>
+                </div>
+
+                <h3 class="h3 blog-item-title">Conversation Disentanglement with Bi-Level Contrastive Learning</h3>
+
+                <p class="blog-text">
+                  We observed that many existing disentanglement models do not pay sufficient attention to the dialogue context, while context is crucial in cases where
+                  the query utterance is ambiguous but the surrounding utterances indicates its belonging.<br><br>
+
+                  We propose to formulate Conversation Disentanglement as a global clustering task, in contrast to how it is traditionally solved as a pointing task. 
+                  We use contrastive learning to pull embeddings of utterances from the same session closer and pull away those from different sessions. K means is then used to cluster the utterances<br><br>
+                
+                  &#x2022; We design a bi-level contrastive learning scheme to learn better utterance level and session level representations for disentanglement.<br>
+                  &#x2022; We delve into the conversation nature to harvest evidence which supports our model to disentangle dialogues without any supervision.<br>
+                  &#x2022; Experiments show that the proposed Bi-CL model significantly outperforms several state of-the-art models both on the supervised and unsupervised settings across datasets.<br><br>
+                
+                  <a href="https://aclanthology.org/2022.findings-emnlp.217/" class="inline-link">[EMNLP]</a>
+                  <a href="https://1drv.ms/p/s!AhjkuFpsNT60kD7CyvDOIyIcsVBs?e=tg08zs" class="inline-link">[Slides at EMNLP]</a>
+                </p>
+              </div>
+              
+              <!-- <figure class="blog-banner-box">
+                <img src="./assets/images/blog-1.jpg" alt="Design conferences in 2022" loading="lazy">
+              </figure> -->
+
+
+            </li>
+
+            <li class="blog-post-item">
+                <!-- <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-2.jpg" alt="Best fonts every designer" loading="lazy">
+                </figure> -->
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Suyu Liu, Chengyu Huang, Libo Qin, Hao Fei, Tat-Seng Chua, and Lizi Liao</p>
+
+                    <span class="dot"></span>
+
+                    <p class="blog-category">To submit</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2023-12-06">To confirm</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Disentangle Multi-party Conversations as Reordering with Curriculum</h3>
+
+                  <p class="blog-text">
+                    We observed existing models' heavy reliance on handcrafted features and their dependence on Ubuntu IRC. This necessaites the
+                    development of a more generalizable techniques that can make the model disentangle as effectively in other settings.<br><br>
+
+                    We propose to use reordering as a generalizable strategy to make conversation disentanglement more effective. Reordering has 2 roles.
+                    In training, it is used to generate new dialogues and augment the dataset. In inference, it is used recursively to correct the model's prediction. <br><br>
+
+                    &#x2022; We propose to use reordering for data augmentation and leverage curriculum learning to guide the training process.<br>
+                    &#x2022; We design a recursive reordering process during inference to enhance the model prediction accuracy.<br>
+                    &#x2022; Experiments show that our proposed techniques can boost the disentanglement effectiveness across different models and datasets, demonstrating their generalizability.
+                  
+                    <!-- <a href="https://drive.google.com/file/d/1Ag3woY2vxadLEpkRNWwbfSyAZNyvGRq0/view?usp=share_link" class="inline-link">[Draft version]</a> -->
+                  </p>
+
+                </div> 
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+      <!--
+        - #PROJECTS
+      -->
+
+      <article class="projects" data-page="projects">
+
+        <header>
+          <h2 class="h2 article-title">Projects</h2>
+        </header>
+
+        <section class="projects">
+
+          <ul class="filter-list">
+
+            <li class="filter-item">
+              <button class="active" data-filter-btn>All</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Research</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Software Engineering</button>
+            </li>
+
+          </ul>
+
+          <div class="filter-select-box">
+
+            <button class="filter-select" data-select>
+
+              <div class="select-value" data-selecct-value>Select category</div>
+
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+
+            </button>
+
+            <ul class="select-list">
+
+              <li class="select-item">
+                <button data-select-item>All</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Research</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Software Engineering</button>
+              </li>
+
+            </ul>
+
+          </div>
+
+          <ul class="project-list">
+
+            <li class="project-item  active" data-filter-item data-category="research">
+              <div class="project-item-container">
+                <div class="project-img">
+                  <img src="./assets/images/research.jpg" alt="orizon" loading="lazy">
+                </div>
+                <div class="project-content-box">
+                  <h3 class="project-title">Multi-party Response Generation with Conversation Disentanglement, Honour Year Project</h3>
+
+                  <p class="project-description">
+                    Supervisor: Professor Tat Seng Chua, Professor Lizi Liao<br><br>
+
+                    This work aims at providing a standard solution for multiparty response generation. There has been initial exploration on this task. 
+                    However, the reliance of existing models on dialogue structure labels restricts their usefulness.<br><br>
+                    
+                    A natural and more robust solution is to first disentangle the conversation, so that the context can be filtered and reorganized for response generation. 
+                    While there has been substantial work that focuses on conversation disentanglement and response generation as standalone tasks, very few has explored the 
+                    option of combining them together.<br><br>
+
+                    To achieve the goal, we consider 2 integration options.<br><br>
+                    &#x2022; Integration with hard disentanglement: Directly filter the dialogue context with a disentanglement model and then input the resulting dialogue into a response generation system<br>
+                    &#x2022; Integration with soft disentanglement: Use a soft Relational Disentanglement to infer a relation graph and get the distilled context embedding, and then input the embedding into a decoder for response generation<br><br>
+
+                    We evaluate both types of pipelines against the existing methods, and demonstrate their effectivness.<br><br>
+
+                    Toolstack: Python, PyTorch
+
+                    <!-- <a href="https://aclanthology.org/2022.findings-emnlp.217/" class="inline-link">[Draft version]</a> -->
+                  </p>
+                </div>
+              </div>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="research">
+              <div class="project-item-container">
+                <div class="project-img">
+                  <img src="./assets/images/research.jpg" alt="orizon" loading="lazy">
+                </div>
+                <div class="project-content-box">
+                  <h3 class="project-title">Disentangle Multi-party Conversations as Reordering with Curriculum</h3>
+
+                  <p class="project-description">
+                    Supervisor: Professor Tat Seng Chua, Professor Lizi Liao<br><br>
+
+                    We observed existing models' heavy reliance on handcrafted features and their dependence on Ubuntu IRC. This necessaites the
+                    development of a more generalizable techniques that can make the model disentangle as effectively in other settings.<br><br>
+
+                    We propose to use reordering as a generalizable strategy to make conversation disentanglement more effective. Reordering has 2 roles.
+                    In training, it is used to generate new dialogues and augment the dataset. In inference, it is used recursively to correct the model's prediction.<br><br>
+
+                    Toolstack: Python, PyTorch
+
+                    <!-- <a href="https://aclanthology.org/2022.findings-emnlp.217/" class="inline-link">[Draft version]</a> -->
+                  </p>
+                </div>
+              </div>
+            </li>
+            
+            <li class="project-item  active" data-filter-item data-category="research">
+              <div class="project-item-container">
+                <div class="project-img">
+                  <img src="./assets/images/research.jpg" alt="orizon" loading="lazy">
+                </div>
+                <div class="project-content-box">
+                  <h3 class="project-title">Conversation Disentanglement with Bi-Level Contrastive Learning</h3>
+
+                  <p class="project-description">
+                    Supervisor: Professor Tat Seng Chua, Professor Lizi Liao<br><br>
+
+                    We observed that many existing disentanglement models do not pay sufficient attention to the dialogue context, while context is crucial in cases where
+                    the query utterance is ambiguous but the surrounding utterances indicates its belonging.<br><br>
+  
+                    We propose to formulate Conversation Disentanglement as a global clustering task, in contrast to how it is traditionally solved as a pointing task. 
+                    We use contrastive learning to pull embeddings of utterances from the same session closer and pull away those from different sessions. K means is then used to cluster the utterances<br><br>
+
+                    Toolstack: Python, PyTorch<br><br>
+
+                    <a href="https://aclanthology.org/2022.findings-emnlp.217/" class="inline-link">[EMNLP]</a>
+                    <a href="https://1drv.ms/p/s!AhjkuFpsNT60kD7CyvDOIyIcsVBs?e=tg08zs" class="inline-link">[Slides at EMNLP]</a>
+                  </p>
+                </div>
+              </div>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="research">
+              <div class="project-item-container">
+                <div class="project-img">
+                  <img src="./assets/images/research.jpg" alt="orizon" loading="lazy">
+                </div>
+                <div class="project-content-box">
+                  <h3 class="project-title">Multi-party Response Generation with Relation Disentanglement</h3>
+
+                  <p class="project-description">
+                    Supervisor: Professor Tat Seng Chua, Professor Lizi Liao<br><br>
+
+                    While there have been works on multi-party response generation, they mostly require the dialogue structure ground truth to be given in advance, which undermines
+                    their usefulness when such ground truth is not present.<br><br>
+                    
+                    Relational Thinking is a fundamental learning process where people spontaneously perceive complex relationships among objects 
+                    or concepts. It was originated and developed in cognitive neuroscience and has remained under-explored in the NLP community.<br><br>
+                    
+                    In this project, we investigate how to make use of Relational Thinking to disentangle the conversation through inferring a reply-to relation
+                    graph. Message passing will then be used to update the hidden states of the utterances, from which the context embedding can be computed. The
+                    decoder can then use this context for response generation.<br><br>
+
+                    Toolstack: Python, PyTorch<br><br>
+
+                    <a href="https://drive.google.com/file/d/1ydefrr2QYO_DJK4z4IN5DKOcumuec2eR/view?usp=share_link" class="inline-link">[Writing sample]</a>
+                  </p>
+                </div>
+              </div>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="software engineering">
+              <div class="project-item-container">
+                <figure class="project-img">
+                  <img src="./assets/images/internship-3.jpg" alt="finance" loading="lazy">
+                </figure>
+                <div class="project-content-box">
+                  <h3 class="project-title">Bank Code Center</h3>
+
+                  <p class="project-description">
+                    I developed a service to store bank records for the Global Payment team in ByteDance. Its functionalities include <br><br>
+
+                    &#x2022; Submission of bank record CRUD requests through the user interface for internal enginners, capable of batch submission <br>
+                    &#x2022; Audition and execution of the CRUD requests <br>
+                    &#x2022; Cached reading of bank records from real time transcations <br><br>
+                    
+                    Toolstack: Go, Kite, MongoDB
+                  </p>
+                </div>
+              </div>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="software engineering">
+              <div class="project-item-container">
+                <div class="project-img">
+                  <img src="./assets/images/RepoSense.png" alt="orizon" loading="lazy">
+                </div>
+                <div class="project-content-box">
+                  <h3 class="project-title">RepoSense</h3>
+
+                  <p class="project-description">
+                    RepoSense is an open source contribution analysis tool for Git repositories. It is particularly useful for those who want a chronological visualisation of the code contributions and commits made to a group of repositories.<br><br>
+
+                    As a project developer and mentor, I personally<br><br>
+
+                    &#x2022; Implemented highlighting of selected single entry or merged group on the summary panel<br>
+                    &#x2022; Implemented binary file support in authorship contribution panel<br>
+                    &#x2022; Wrote developer tutorial and release guide for RepoSense<br>
+                    &#x2022; Reviewed close to 100 pull requests and made 5 product releases<br><br>
+
+                    Toolstack: JavaScript, Vue, Java<br><br>
+
+                    <a href="https://reposense.org/" class="inline-link">[Product Site]</a>
+                    <a href="https://github.com/reposense/RepoSense" class="inline-link">[Repository]</a>
+                  </p>
+                </div>
+              </div>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="software engineering">
+              
+              <div class="project-item-container">
+                <div class="project-img">
+                  <img src="./assets/images/internship-2.png" alt="orizon" loading="lazy">
+                </div>
+                <div class="project-content-box">
+                  <h3 class="project-title">Transcation monitoring bot</h3>
+
+                  <p class="project-description">
+                    I developed a monitoring bot to monitor the customer transcations for the Global Payment team in ByteDance. It is capable of<br><br>
+
+                    &#x2022; Receiving alerts from an internal platform that monitors a Time Series Database (TSDB) storeing metrics emitted by the payment system<br>
+                    &#x2022; Sending messages to engineers in charge and help them handle the alerts<br>
+                    &#x2022; CRUD of alert trigger rules that are used by the internal monitoring platform<br><br>
+
+                    Toolstack: Go, Ginex, Kite, MongoDB, Lark Open Platform
+                  </p>
+                </div>
+              </div> 
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="software engineering">
+              
+              <div class="project-item-container">
+                <div class="project-img">
+                  <img src="./assets/images/internship-1.png" alt="orizon" loading="lazy">
+                </div>
+                <div class="project-content-box">
+                  <h3 class="project-title">UWave Mobile Application</h3>
+
+                  <p class="project-description">
+                    UWave is a mobile application having more than 10000 users on campus. It provides various utilities to help people on campus connect
+                    with each other, learn about campus life, and manage their studies.<br><br>
+
+                    I collaborated with other members in the development team of UWave and<br><br>
+
+                    &#x2022; Implemented part of the module calendar page<br>
+                    &#x2022; Implemented features on several other pages such as the but timing page, library access page, community page, and settings page<br>
+                    &#x2022; Helped with its user growth especially in the NUS community<br><br>
+
+                    Toolstack: Dart, Flutter<br><br>
+
+                    <a href="https://play.google.com/store/apps/details?id=com.wave.identity&hl=en_US" class="inline-link">[Android]</a>
+                    <a href="https://uwave.sg/" class="inline-link">[IOS]</a>
+                  </p>
+                </div>
+              </div>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+      <!--
+        - #TEACHING
+      -->
+
+      <article class="teaching" data-page="teaching">
+
+        <header>
+          <h2 class="h2 article-title">Teaching</h2>
+        </header>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Teaching Activities</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+              <a href="https://nusmods.com/courses/CS3230/design-and-analysis-of-algorithms">
+                <h4 class="h4 timeline-item-title">CS3230, Design and Analysis of Algorithms, NUS</h4>
+              </a>
+
+              <span>Aug 2021 — Nov 2021</span>
+
+              <p class="timeline-text">
+                Conduct weekly tutorials and consultation sessions; Serve as proctor; Mark the assignments and submissions
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <a href="https://nusmods.com/courses/CS2100/computer-organisation">
+                <h4 class="h4 timeline-item-title">CS2100, Computer Organization, NUS</h4>
+              </a>
+
+              <span>Jan 2021 — April 2021</span>
+
+              <p class="timeline-text">
+                Conduct weekly lab sessions; Mark the lab reports
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <a href="https://nusmods.com/courses/CS1231S/discrete-structures">
+                <h4 class="h4 timeline-item-title">CS1231S, Discrete Structures, NUS</h4>
+              </a>
+
+              <span>Aug 2020 - Nov 2020</span>
+
+              <p class="timeline-text">
+                Conduct weekly tutorials and consultation sessions; Serve as proctor; Mark the assignments and submissions
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+              
+              <a href="https://nusmods.com/courses/CS1101S/programming-methodology">
+                <h4 class="h4 timeline-item-title">CS1101S, Programming Methodology, NUS</h4>
+              </a>
+
+              <span>Aug 2020 - Nov 2020</span>
+
+              <p class="timeline-text">
+                Conduct weekly tutorials and consultation sessions; Mark the assignments
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+      </article>
+
+      <!--
+        - #CONTACT
+      -->
+
+      <!-- <article class="contact" data-page="contact">
+
+        <header>
+          <h2 class="h2 article-title">Contact</h2>
+        </header>
+
+        <section class="mapbox" data-mapbox>
+          <figure>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d199666.5651251294!2d-121.58334177520186!3d38.56165006739519!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x809ac672b28397f9%3A0x921f6aaa74197fdb!2sSacramento%2C%20CA%2C%20USA!5e0!3m2!1sen!2sbd!4v1647608789441!5m2!1sen!2sbd"
+              width="400" height="300" loading="lazy"></iframe>
+          </figure>
+        </section>
+
+        <section class="contact-form">
+
+          <h3 class="h3 form-title">Contact Form</h3>
+
+          <form action="#" class="form" data-form>
+
+            <div class="input-wrapper">
+              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
+
+              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
+            </div>
+
+            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+
+            <button class="form-btn" type="submit" disabled data-form-btn>
+              <ion-icon name="paper-plane"></ion-icon>
+              <span>Send Message</span>
+            </button>
+
+          </form>
+
+        </section>
+
+      </article> -->
+
+    </div>
+
+  </main>
+
+
+
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
