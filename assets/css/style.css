@@ -804,6 +804,8 @@ main {
   margin-bottom: 7px;
 }
 
+.timeline-item-title:hover { color: var(--orange-yellow-crayola); }
+
 .timeline-list span {
   color: var(--orange-yellow-crayola);
   font-weight: var(--fw-400);
@@ -1047,6 +1049,8 @@ main {
   text-transform: capitalize;
   line-height: 1.3;
 }
+
+.project-item:hover .project-title { color: var(--orange-yellow-crayola); }
 
 .project-description {
   color: var(--black-3);
