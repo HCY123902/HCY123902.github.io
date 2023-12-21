@@ -226,25 +226,26 @@
 
           <p>
             My research focus is on Natural Language Processing (NLP). A more specific area that I am keen to explore is 
-            dialogue agents. I enjoy building conversational agents that can benefit the public in various scenarios. My goal
-            is to extend the usage of open-domain chatbots to more general settings.<br><br>
+            extending the usage of language models to more general settings.<br><br>
 
-            Previously, I was working on Conversation Disentanglement and multi-party Response Generation to enable chit-chat agents
+            Previously, I was working on <b>Conversation Disentanglement</b> and <b>Multi-party Response Generation</b> to enable chit-chat agents
             to converse properly in multi-party dialogues that involve more than 2 speakers. Solving these tasks is crucial for the 
             eventual application of chatbots in group chat and forums, where different topics may be discussed in a simultaneous and 
             interleaved manner.<br><br>
             
-            A related direction that I am exploring is utilizing dialogue agents in multi-party scenarios, potentially with preset goals. 
-            In these settings, different agents can assume different personas and roles, and the relations between the agents can be 
-            collaborative, competitive, or adversarial. There have been exciting works released recently that make use of multiple dialogue 
+            My current research directions include<br>
+            &#x2022; <b>Applying LMs to multi-party settings</b>: In multi-party settings, potentially with preset goals, 
+            different agents can assume different personas and roles, and the relations between the agents can be 
+            collaborative, adversarial, or competitive. There have been exciting works released recently that make use of multiple dialogue 
             agents for settings such as <a href="https://princeton-nlp.github.io/SocraticAI/" class="inline-link">problem-solving</a> 
-            and <a href="https://arxiv.org/pdf/2010.00685.pdf" class="inline-link">text adventures</a>. Extending these works to situations where 
-            there are more agents each with their individual motivations will provide new insights into the potential of models such as ChatGPT to 
-            interact with the world.<br><br>
+            and <a href="https://arxiv.org/pdf/2010.00685.pdf" class="inline-link">text adventures</a>. Exploration is needed for more complicated scenarios.<br><br>
 
-            Another related direction that I would like to explore is enhancing the reasoning ability of conversational agents and, more 
-            specifically, large language models, with the help of collaboration between agents and augmentation of external knowledge. The 
-            aim is to not only make these models reason more logically but also make them reason more truthfully.
+            <!-- A related direction that I am exploring is utilizing dialogue agents  -->
+             
+            &#x2022; <b>Reasoning</b>: I am exploring various ways to enhance the reasoning ability of LMs, including 
+            (1) collaboration between agents to make the reasoning path more logical and (2) augmentation of external knowledge to increase truthfulness.<br><br>
+
+            Aside from these, I am open to other NLP topics too.
           </p>
         </section>
 
@@ -736,15 +737,15 @@
                 <h3 class="h3 blog-item-title">Conversation Disentanglement with Bi-Level Contrastive Learning</h3>
 
                 <p class="blog-text">
-                  We observed that many existing disentanglement models do not pay sufficient attention to the dialogue context, while context is crucial in cases where
-                  the query utterance is ambiguous but the surrounding utterances indicates its belonging.<br><br>
+                  <!-- We observed that many existing disentanglement models do not pay sufficient attention to the dialogue context, while context is crucial in cases where
+                  the query utterance is ambiguous but the surrounding utterances indicates its belonging.<br><br> -->
 
                   We propose to formulate Conversation Disentanglement as a global clustering task, in contrast to how it is traditionally solved as a pointing task. 
                   We use contrastive learning to pull embeddings of utterances from the same session closer and pull away those from different sessions. K means is then used to cluster the utterances.<br><br>
                 
-                  &#x2022; We design a bi-level contrastive learning scheme to learn better utterance level and session level representations for disentanglement.<br>
+                  <!-- &#x2022; We design a bi-level contrastive learning scheme to learn better utterance level and session level representations for disentanglement.<br>
                   &#x2022; We delve into the conversation nature to harvest evidence which supports our model to disentangle dialogues without any supervision.<br>
-                  &#x2022; Experiments show that the proposed Bi-CL model significantly outperforms several state of-the-art models both on the supervised and unsupervised settings across datasets.<br><br>
+                  &#x2022; Experiments show that the proposed Bi-CL model significantly outperforms several state of-the-art models both on the supervised and unsupervised settings across datasets.<br><br> -->
                 
                   <a href="https://aclanthology.org/2022.findings-emnlp.217/" class="inline-link">[Paper]</a>
                   <a href="https://1drv.ms/p/s!AhjkuFpsNT60kD7CyvDOIyIcsVBs?e=tg08zs" class="inline-link">[Slides]</a>
@@ -777,15 +778,15 @@
                 <h3 class="h3 blog-item-title">Helping Large Language Models Generate Better Citations with Fine-Grained Rewards</h3>
 
                 <p class="blog-text">
-                  We observed that most existing LLMs do not output attributions for the claims they generated, while attributions
-                  can effectively reduce hallucination and increase model responses' explanability.<br><br>
+                  <!-- We observed that most existing LLMs do not output attributions for the claims they generated, while attributions
+                  can effectively reduce hallucination and increase model responses' explanability.<br><br> -->
 
                   We propose to use fine-grained rewards to train LLMs to both generate supportive and relevant citations, while
                   preserving other qualities, such as answering correctness in the Question Anwering task.<br><br>
 
-                  &#x2022; We propose fine-grained rewards for correctness and attribution in citation-augmented text generation, a task especially important for generation-based QA.<br>
+                  <!-- &#x2022; We propose fine-grained rewards for correctness and attribution in citation-augmented text generation, a task especially important for generation-based QA.<br>
                   &#x2022; We conduct a systematic analysis of common LLM training strategies in conjunction with either coarse or fine-grained rewards.<br>
-                  &#x2022; Experiments show that fine-grained rewards are more effective than holistic rewards. On LLAMA-2-7B, fine-grained RLHF and rejection sampling enable our model to surpass ChatGPT. More experiments on EXPERTQA show the generalizability of our methods.<br><br>
+                  &#x2022; Experiments show that fine-grained rewards are more effective than holistic rewards. On LLAMA-2-7B, fine-grained RLHF and rejection sampling enable our model to surpass ChatGPT. More experiments on EXPERTQA show the generalizability of our methods.<br><br> -->
                  
                   <a href="https://drive.google.com/file/d/1Pb6vNGrruY2ujPIV8xXzDxIkzSfcafcI/view?usp=sharing" class="inline-link">[Paper]</a>
                 </p>
@@ -811,15 +812,15 @@
             <h3 class="h3 blog-item-title">Unleashing the Power of Reference-Based Phishing Detectors with Multimodal Knowledge Graphs</h3>
 
             <p class="blog-text">
-              We observed that existing phishing detection methods are vulnerable to the temporal distributional shift of phishing webpages, and
-              cannot generalize well when webpages shift their phishing intention from logos to HTML text.<br><br>
+              <!-- We observed that existing phishing detection methods are vulnerable to the temporal distributional shift of phishing webpages, and
+              cannot generalize well when webpages shift their phishing intention from logos to HTML text.<br><br> -->
 
               We propose to construct an industry-based, multimodal knowledge base construction pipeline that are robust to temporal shift as well as 
               a multimodal phishing detector that leverages HTML text to detect brand and credential-taking intentions.<br><br>
             
-              &#x2022; We design a knowledge base construction pipeline that uses industry sectors as a starting category to gather multimodal knowledge about legtimate brands that are often targetted by phishing campaigns.<br>
+              <!-- &#x2022; We design a knowledge base construction pipeline that uses industry sectors as a starting category to gather multimodal knowledge about legtimate brands that are often targetted by phishing campaigns.<br>
               &#x2022; We design a multimodal phishing detector that uses NLP-based methods to extract brand and credential-taking intentions from the HTML text.<br>
-              &#x2022; Experiments show that our method surpasses the existing baselines in terms of both precision and recall and it is also robust according to the wild study.<br><br>
+              &#x2022; Experiments show that our method surpasses the existing baselines in terms of both precision and recall and it is also robust according to the wild study.<br><br> -->
             
               <a href="https://drive.google.com/file/d/1pCyEiKApUgriG2qR1l-wVjpFWC8mRRmC/view?usp=sharing" class="inline-link">[Paper]</a>
             </p>
